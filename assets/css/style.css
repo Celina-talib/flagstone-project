@@ -12,6 +12,7 @@ html, body {
 body {
     display: flex;
     flex-direction: column;
+    flex: 1; /* Allow the body to grow and fill the available space */
 }
 
 /* Navbar background color */
@@ -51,8 +52,6 @@ body {
 body {
     background-color: #FFCCBC; /* Warm Pastel Peach */
     color: #8D6E63; /* Earthy Text */
-    overflow-x: hidden; /* Prevent horizontal overflow */
-    flex: 1; /* Allow the body to grow and fill the available space */
 }
 
 /* Header styling */
@@ -73,7 +72,54 @@ body {
 
 /* Hero section styling */
 .hero {
+    position: relative;
     padding: 0;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    z-index: 1;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FFFFFF; /* White Text for better contrast */
+    z-index: 2; /* Ensure content is above the gradient */
+}
+
+.hero-headline {
+    font-family: 'Boogaloo', cursive;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.hero-btn {
+    background-color: #8D6E63; /* Earthy Brown */
+    color: #FFFFFF; /* White Text */
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.hero-btn:hover {
+    background-color: #F8BBD0; /* Warm Pastel Pink */
+    color: #8D6E63; /* Earthy Text */
 }
 
 /* Footer styling */

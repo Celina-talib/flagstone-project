@@ -7,8 +7,8 @@
 
 /* Navbar brand styling */
 .navbar-brand {
-    font-family: 'Merriweather', serif; /* Changed to Merriweather */
-    font-size: 1.5rem;
+    font-family: 'Boogaloo', cursive; /* Changed to Boogaloo */
+    font-size: 2rem; /* Increased font size */
     color: #8D6E63; /* Earthy Text */
 }
 
@@ -53,4 +53,9 @@ body {
 /* Accent text styling */
 .accent {
     color: #F8BBD0; /* Warm Pastel Pink */
+}
+
+/* Hero section styling */
+.hero {
+    padding: 0;
 }

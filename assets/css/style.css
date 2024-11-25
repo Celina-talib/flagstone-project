@@ -1,5 +1,19 @@
 /* assets/css/style.css */
 
+/* Ensure the body and html take up the full height */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+/* Use flexbox to structure the layout */
+body {
+    display: flex;
+    flex-direction: column;
+}
+
 /* Navbar background color */
 .navbar {
     background-color: #F8BBD0; /* Warm Pastel Pink */
@@ -37,6 +51,8 @@
 body {
     background-color: #FFCCBC; /* Warm Pastel Peach */
     color: #8D6E63; /* Earthy Text */
+    overflow-x: hidden; /* Prevent horizontal overflow */
+    flex: 1; /* Allow the body to grow and fill the available space */
 }
 
 /* Header styling */
@@ -58,4 +74,28 @@ body {
 /* Hero section styling */
 .hero {
     padding: 0;
+}
+
+/* Footer styling */
+.footer {
+    background-color: #F8BBD0; /* Warm Pastel Pink */
+    color: #8D6E63; /* Earthy Text */
+    flex-shrink: 0; /* Prevent the footer from shrinking */
+}
+
+.footer .footer-img {
+    max-width: 100px; /* Adjust the size as needed */
+    margin: 10px;
+    filter: invert(34%) sepia(19%) saturate(746%) hue-rotate(329deg) brightness(92%) contrast(89%); /* Apply color filter */
+}
+
+/* Social media icons styling */
+.footer .social-icon {
+    color: #8D6E63; /* Earthy Text */
+    font-size: 1.5rem; /* Adjust size as needed */
+    margin: 0 10px;
+}
+
+.footer .social-icon:hover {
+    color: #6D4C41; /* Darker Earthy Text on hover */
 }

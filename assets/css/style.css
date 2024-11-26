@@ -1,148 +1,202 @@
 /* assets/css/style.css */
 
+
 /* Ensure the body and html take up the full height */
 html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden; /* Prevent horizontal overflow */
+   height: 100%;
+   margin: 0;
+   padding: 0;
+   overflow-x: hidden; /* Prevent horizontal overflow */
 }
+
 
 /* Use flexbox to structure the layout */
 body {
-    display: flex;
-    flex-direction: column;
-    flex: 1; /* Allow the body to grow and fill the available space */
+   display: flex;
+   flex-direction: column;
+   min-height: 100vh; /* Ensure the body takes up the full viewport height */
 }
+
 
 /* Navbar background color */
 .navbar {
-    background-color: #F8BBD0; /* Warm Pastel Pink */
+   background-color: #F8BBD0; /* Warm Pastel Pink */
 }
+
 
 /* Navbar brand styling */
 .navbar-brand {
-    font-family: 'Boogaloo', cursive; /* Changed to Boogaloo */
-    font-size: 2rem; /* Increased font size */
-    color: #8D6E63; /* Earthy Text */
+   font-family: 'Boogaloo', cursive; /* Changed to Boogaloo */
+   font-size: 2rem; /* Increased font size */
+   color: #8D6E63; /* Earthy Text */
 }
+
 
 /* Align navbar links to the right */
 .navbar-nav {
-    margin-left: auto;
+   margin-left: auto;
 }
+
 
 /* Navbar links styling */
 .navbar-nav .nav-link {
-    color: #8D6E63; /* Earthy Text */
-    font-size: 1.1rem;
-    margin-right: 1rem;
+   color: #8D6E63; /* Earthy Text */
+   font-size: 1.1rem;
+   margin-right: 1rem;
 }
 
+
 .navbar-nav .nav-link:hover {
-    color: #6D4C41; /* Darker Earthy Text on hover */
+   color: #6D4C41; /* Darker Earthy Text on hover */
 }
+
 
 /* Navbar toggler icon color */
 .navbar-toggler-icon {
-    color: #8D6E63; /* Earthy Text */
+   color: #8D6E63; /* Earthy Text */
 }
+
 
 /* Main body styling */
 body {
-    background-color: #FFCCBC; /* Warm Pastel Peach */
-    color: #8D6E63; /* Earthy Text */
+   background-color: #FFCCBC; /* Warm Pastel Peach */
+   color: #8D6E63; /* Earthy Text */
+   flex: 1; /* Allow the body to grow and fill the available space */
 }
+
 
 /* Header styling */
 .header {
-    background-color: #B3E5FC; /* Soft Blue */
+   background-color: #B3E5FC; /* Soft Blue */
 }
+
 
 /* Button styling */
 .button {
-    background-color: #A5D6A7; /* Gentle Green */
-    color: #FFFFFF; /* White Text */
+   background-color: #A5D6A7; /* Gentle Green */
+   color: #FFFFFF; /* White Text */
 }
+
 
 /* Accent text styling */
 .accent {
-    color: #F8BBD0; /* Warm Pastel Pink */
+   color: #F8BBD0; /* Warm Pastel Pink */
 }
+
 
 /* Hero section styling */
 .hero {
-    position: relative;
-    padding: 0;
-    height: auto; /* Adjust the height as needed */
+   position: relative;
+   padding: 0;
+   height: 100vh; /* Full viewport height */
+   background-image: url('assets/images/hero-image.png');
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
 }
 
-.hero img {
-    width: 100%;
-    height: auto;
-}
 
 .hero::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-    z-index: 1;
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+   z-index: 1;
 }
+
 
 .hero-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #FFFFFF; /* White Text for better contrast */
-    z-index: 2; /* Ensure content is above the gradient */
+   position: absolute;
+   top: 50%; /* Position in the center of the page */
+   left: 50%;
+   transform: translate(-50%, -50%);
+   color: #FFFFFF; /* White Text for better contrast */
+   z-index: 2; /* Ensure content is above the gradient */
 }
+
 
 .hero-headline {
-    font-family: 'Boogaloo', cursive;
-    font-size: 2rem;
-    margin-bottom: 20px;
+   font-family: 'Boogaloo', cursive;
+   font-size: 2rem;
+   margin-bottom: 20px;
 }
+
 
 .hero-btn {
-    background-color: #8D6E63; /* Earthy Brown */
-    color: #FFFFFF; /* White Text */
-    font-size: 1.1rem;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    text-decoration: none;
+   background-color: #8D6E63; /* Earthy Brown */
+   color: #FFFFFF; /* White Text */
+   font-size: 1.1rem;
+   padding: 10px 20px;
+   border: none;
+   border-radius: 5px;
+   text-decoration: none;
 }
 
+
 .hero-btn:hover {
-    background-color: #F8BBD0; /* Warm Pastel Pink */
-    color: #8D6E63; /* Earthy Text */
+   background-color: #F8BBD0; /* Warm Pastel Pink */
+   color: #8D6E63; /* Earthy Text */
 }
+
+
+/* Contact form section styling */
+.contact-form-section {
+   padding: 50px 0;
+   background-color: #FFF3E0; /* Light background color */
+}
+
+
+.contact-form-section h2 {
+   font-family: 'Boogaloo', cursive;
+   color: #8D6E63; /* Earthy Text */
+   margin-bottom: 30px;
+}
+
+
+.contact-form-section .form-control {
+   border-radius: 5px;
+   border: 1px solid #8D6E63; /* Earthy Text */
+}
+
+
+.contact-form-section .btn-primary {
+   background-color: #8D6E63; /* Earthy Brown */
+   border: none;
+}
+
+
+.contact-form-section .btn-primary:hover {
+   background-color: #F8BBD0; /* Warm Pastel Pink */
+   color: #8D6E63; /* Earthy Text */
+}
+
 
 /* Footer styling */
 .footer {
-    background-color: #F8BBD0; /* Warm Pastel Pink */
-    color: #8D6E63; /* Earthy Text */
-    flex-shrink: 0; /* Prevent the footer from shrinking */
+   background-color: #F8BBD0; /* Warm Pastel Pink */
+   color: #8D6E63; /* Earthy Text */
+   flex-shrink: 0; /* Prevent the footer from shrinking */
 }
 
+
 .footer .footer-img {
-    max-width: 100px; /* Adjust the size as needed */
-    margin: 10px;
-    filter: invert(34%) sepia(19%) saturate(746%) hue-rotate(329deg) brightness(92%) contrast(89%); /* Apply color filter */
+   max-width: 100px; /* Adjust the size as needed */
+   margin: 10px;
+   filter: invert(34%) sepia(19%) saturate(746%) hue-rotate(329deg) brightness(92%) contrast(89%); /* Apply color filter */
 }
+
 
 /* Social media icons styling */
 .footer .social-icon {
-    color: #8D6E63; /* Earthy Text */
-    font-size: 1.5rem; /* Adjust size as needed */
-    margin: 0 10px;
+   color: #8D6E63; /* Earthy Text */
+   font-size: 1.5rem; /* Adjust size as needed */
+   margin: 0 10px;
 }
 
+
 .footer .social-icon:hover {
-    color: #6D4C41; /* Darker Earthy Text on hover */
+   color: #6D4C41; /* Darker Earthy Text on hover */
 }

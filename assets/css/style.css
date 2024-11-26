@@ -18,6 +18,15 @@ body {
 }
 
 
+/* Background image styling */
+.background-image {
+   background-image: url('assets/images/hero-image.png');
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+}
+
+
 /* Navbar background color */
 .navbar {
    background-color: #F8BBD0; /* Warm Pastel Pink */
@@ -89,10 +98,6 @@ body {
    position: relative;
    padding: 0;
    height: 100vh; /* Full viewport height */
-   background-image: url('assets/images/hero-image.png');
-   background-size: cover;
-   background-position: center;
-   background-repeat: no-repeat;
 }
 
 
@@ -109,10 +114,6 @@ body {
 
 
 .hero-content {
-   position: absolute;
-   top: 50%; /* Position in the center of the page */
-   left: 50%;
-   transform: translate(-50%, -50%);
    color: #FFFFFF; /* White Text for better contrast */
    z-index: 2; /* Ensure content is above the gradient */
 }
@@ -199,4 +200,10 @@ body {
 
 .footer .social-icon:hover {
    color: #6D4C41; /* Darker Earthy Text on hover */
+}
+
+
+/* Custom CSS to adjust the chat box position */
+#tawkchat-container {
+   bottom: 80px !important; /* Adjust this value as needed */
 }

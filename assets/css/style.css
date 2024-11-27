@@ -199,7 +199,6 @@ body {
    flex-shrink: 0; /* Prevent the footer from shrinking */
 }
 
-
 .footer .footer-img {
    max-width: 100px; /* Adjust the size as needed */
    margin: 10px;
@@ -223,4 +222,54 @@ body {
 /* Custom CSS to adjust the chat box position */
 #tawkchat-container {
    bottom: 80px !important; /* Adjust this value as needed */
+}
+
+.about-us-section {
+  padding: 60px 0;
+}
+
+.about-us-section .row {
+  margin-bottom: 30px; /* Add spacing between rows */
+}
+
+.about-us-section .card {
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin-bottom: 30px; /* Increase spacing at the bottom of the cards */
+  background-color: #D7BDE2; /* Pastel Mauve color */
+  color: #4A235A; /* Dark Mauve text color for better contrast */
+}
+
+.about-us-section .card:hover {
+  transform: translateY(-10px);
+}
+
+.about-us-section .card-title {
+  color: #4A235A; /* Dark Mauve color for card titles */
+}
+
+.about-us-section .btn-primary {
+  background-color: #4A235A; /* Dark Mauve color for buttons */
+  border-color: #4A235A;
+  color: #FFFFFF; /* White text color for buttons */
+}
+
+.about-us-section .btn-primary:hover {
+  background-color: #6D4C41; /* Darker Mauve on hover */
+  border-color: #6D4C41;
+  color: #FFFFFF; /* White text color for buttons */
+}
+
+.about-us-section .card-body {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.about-us-section .card-text {
+  flex-grow: 1;
 }

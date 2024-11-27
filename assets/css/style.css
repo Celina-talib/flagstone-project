@@ -273,3 +273,31 @@ body {
 .about-us-section .card-text {
   flex-grow: 1;
 }
+
+/* Dropdown menu styling */
+.dropdown-menu {
+  background-color: #D7BDE2; /* Pastel Mauve color */
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-item {
+  color: #4A235A; /* Dark Mauve text color */
+}
+
+.dropdown-item:hover {
+  background-color: #4A235A; /* Dark Mauve background on hover */
+  color: #FFFFFF; /* White text color on hover */
+}
+
+.btn-primary.dropdown-toggle {
+  background-color: #4A235A; /* Dark Mauve color for dropdown button */
+  border-color: #4A235A;
+  color: #FFFFFF; /* White text color for dropdown button */
+}
+
+.btn-primary.dropdown-toggle:hover {
+  background-color: #6D4C41; /* Darker Mauve on hover */
+  border-color: #6D4C41;
+  color: #FFFFFF; /* White text color on hover */
+}
